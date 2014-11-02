@@ -64,6 +64,7 @@ var fetchSearchResult = function() {
                         $(this).attr('target', '_blank');
                         var u = $(this).attr('href');
                         u = 'go.php' + u.substr(4);
+                        $(this).attr('href', u);
                     });
                     $('.related a').each(function() {
                         var u = encodeURIComponent($(this).text());
