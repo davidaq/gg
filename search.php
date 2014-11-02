@@ -28,6 +28,8 @@ foreach($match[1] as $v) {
 echo '</div>';
 $output = strstr($output, 'Searches related to');
 preg_match('/\<table.*?\>(.*?)\<\/table\>/is', $output, $m);
-echo '<div class="related">';
-echo $m[1];
-echo '</div>';
+if(isset($m[1])) {
+    echo '<div class="related">';
+    echo $m[1];
+    echo '</div>';
+}
