@@ -1,0 +1,21 @@
+#page_card_home {
+    display: block;
+    height: 85%;
+    table,tr,td {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    h1 {
+        font-size: 50px;
+        color: #339;
+        text-shadow: 1px 1px 5px #AAA;
+    }
+    small {
+        display: block;
+        color: #999;
+        padding: 50px;
+    }
+}

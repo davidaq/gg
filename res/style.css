@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 黑体,arial; }
+
+.searchbox, .searchbtn {
+  display: inline-block;
+  line-height: 38px;
+  font-size: 20px;
+  padding: 0 10px;
+  margin: 0; }
+
+.searchbtn {
+  background: #555;
+  border: none;
+  color: #FFF;
+  height: 40px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #000; }
+  .searchbtn:active {
+    color: #DDD;
+    text-shadow: 0px 0px 2px #000; }
+
+.searchbox {
+  border: 3px solid #555;
+  background: #FFF;
+  height: 34px;
+  color: #555;
+  width: 50%;
+  outline: none;
+  box-shadow: inset 0 0 5px #AAA; }
+
+#page_card_home {
+  display: block;
+  height: 85%; }
+  #page_card_home table, #page_card_home tr, #page_card_home td {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0; }
+  #page_card_home h1 {
+    font-size: 50px;
+    color: #339;
+    text-shadow: 1px 1px 5px #AAA; }
+  #page_card_home small {
+    display: block;
+    color: #999;
+    padding: 50px; }
+
+#page_card_result {
+  display: none; }
+  #page_card_result h1 {
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #339;
+    text-shadow: 1px 1px 5px #AAA;
+    display: inline-block;
+    margin: 5px 10px; }
+
+/*# sourceMappingURL=style.css.map */
