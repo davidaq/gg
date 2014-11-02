@@ -60,6 +60,11 @@ var fetchSearchResult = function() {
                 page--;
                 $('#page_card_result .pages a:eq(' + page + ')').addClass('active');
                 setTimeout(function() {
+                    $('.result a').each(function() {
+                        $(this).attr('target', '_blank');
+                        var u = $(this).attr('href');
+                        u = 'go.php' + u.substr(4);
+                    });
                     $('.related a').each(function() {
                         var u = encodeURIComponent($(this).text());
                         $(this).attr('href', '#' + u);
