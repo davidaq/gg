@@ -68,6 +68,7 @@ var fetchSearchResult = function() {
                         var u = $(this).attr('href');
                         u = 'go.php' + u.substr(4);
                         $(this).attr('href', u);
+                        $(this).after(' &raquo; <small><a target="_blank" href="' + u + '&gg">浏览过墙预处理页面</a></small>');
                     });
                     $('.related a').each(function() {
                         var u = encodeURIComponent($(this).text());
