@@ -36,9 +36,10 @@ if(isset($_GET['gg'])) {
         echo $output;
     } else {
         $output = fetchUrl($url, true, $UA['iphone']);
-        $output = preg_replace('/\<iframe.*?\>\<\/iframe\>/is', '', $output);
-        $output = preg_replace('/\<link.*?(wordpress|google|blogspot\.com|blogger.com).*?\>/', '', $output);
-        $output = preg_replace('/\<script.*?(wordpress|google|blogspot\.com)|blogger.com.*?\>\<\/script\>/', '', $output);
+        $output = preg_replace('/\<iframe.*?\<\/iframe\>/is', '', $output);
+        $output = preg_replace('/\<link.*?(wordpress|google|blogspot\.com|blogger.com).*?\>/is', '', $output);
+        $output = preg_replace('/\<script.*?(gstatic|wordpress|google|blogspot\.com|blogger.com).*?\>.*?\<\/script\>/is', '', $output);
+        $output = str_replace('<head>', '<head><base href="//' . $host . '"/>', $output);
         echo $output;
     }
 } else {
