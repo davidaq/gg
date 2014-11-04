@@ -60,6 +60,9 @@ var fetchSearchResult = function() {
                 page--;
                 $('#page_card_result .pages a:eq(' + page + ')').addClass('active');
                 setTimeout(function() {
+                    $('a.typotip').each(function() {
+                        $(this).attr('href', '#' + encodeURIComponent($(this).html()));
+                    });
                     $('.result a').each(function() {
                         $(this).attr('target', '_blank');
                         var u = $(this).attr('href');
